@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="ai-spring-boot-starter-camel-core">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../sts-bundle/sts-3.9.1.RELEASE/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.5"/>
+    <property name="source" value="1.5"/>
+    <path id="Maven Dependencies.libraryclasspath">
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/springframework/spring-context/4.3.10.RELEASE/spring-context-4.3.10.RELEASE.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/springframework/spring-aop/4.3.10.RELEASE/spring-aop-4.3.10.RELEASE.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/springframework/spring-beans/4.3.10.RELEASE/spring-beans-4.3.10.RELEASE.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/springframework/spring-core/4.3.10.RELEASE/spring-core-4.3.10.RELEASE.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/springframework/spring-expression/4.3.10.RELEASE/spring-expression-4.3.10.RELEASE.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/apache/camel/camel-spring-boot-starter/2.21.1/camel-spring-boot-starter-2.21.1.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/springframework/boot/spring-boot-starter/1.5.12.RELEASE/spring-boot-starter-1.5.12.RELEASE.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/springframework/boot/spring-boot/1.5.12.RELEASE/spring-boot-1.5.12.RELEASE.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.12.RELEASE/spring-boot-autoconfigure-1.5.12.RELEASE.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/springframework/boot/spring-boot-starter-logging/1.5.12.RELEASE/spring-boot-starter-logging-1.5.12.RELEASE.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/slf4j/log4j-over-slf4j/1.7.25/log4j-over-slf4j-1.7.25.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/apache/camel/camel-spring-boot/2.21.1/camel-spring-boot-2.21.1.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/apache/camel/camel-spring/2.21.1/camel-spring-2.21.1.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/springframework/spring-tx/4.3.16.RELEASE/spring-tx-4.3.16.RELEASE.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-core-2.3.0.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-impl-2.3.0.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/apache/camel/camel-core-starter/2.21.1/camel-core-starter-2.21.1.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/apache/camel/camel-core/2.21.1/camel-core-2.21.1.jar"/>
+        <pathelement location="C:/Users/cheungm/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar"/>
+    </path>
+    <path id="ai-spring-boot-starter-camel-core.classpath">
+        <pathelement location="target/classes"/>
+        <pathelement location="target/test-classes"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="target/classes"/>
+        <mkdir dir="target/test-classes"/>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/main/java">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/main/resources">
+                <exclude name="**/*.java"/>
+                <exclude name="**"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/test-classes">
+            <fileset dir="src/test/java">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/test-classes">
+            <fileset dir="src/test/resources">
+                <exclude name="**/*.java"/>
+                <exclude name="**"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="target/classes"/>
+        <delete dir="target/test-classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src/main/java"/>
+            <src path="src/main/resources"/>
+            <exclude name="**"/>
+            <classpath refid="ai-spring-boot-starter-camel-core.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/test-classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src/test/java"/>
+            <src path="src/test/resources"/>
+            <exclude name="**"/>
+            <classpath refid="ai-spring-boot-starter-camel-core.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+</project>
