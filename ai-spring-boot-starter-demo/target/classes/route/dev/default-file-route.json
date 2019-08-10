@@ -1,0 +1,9 @@
+    
+{
+  "routeId": "file-kibana-route",
+  "routeType": "DEFAULT",
+  "from": "file://C:/elastic2/a?charset=utf-8",
+  "toUris": ["file://C:/elastic2/b?charset=utf-8"],
+  "log": ">>> ${sysenv.OS} ${sys.java.io.tmpdir} {{camelsimple.route.path}} {{server.port}}  ${body}",
+  "tracing": "true"
+}
