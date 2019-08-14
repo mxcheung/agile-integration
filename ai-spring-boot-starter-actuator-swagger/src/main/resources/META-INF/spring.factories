@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+au.com.mxcheung.starter.swagger.SwaggerConfiguration,\
+au.com.mxcheung.starter.actuator.ActuatorConfiguration,\
+au.com.mxcheung.starter.cloud.CloudConfiguration
