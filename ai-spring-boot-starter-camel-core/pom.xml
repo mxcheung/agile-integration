@@ -57,7 +57,7 @@
 		<spring.cloud.sleuth.version>1.2.2.RELEASE</spring.cloud.sleuth.version>
 		
 		<!-- Test Dependency Library Versions -->
-		<junit-version>4.12</junit-version>
+		<junit-version>4.13.1</junit-version>
 
 	</properties>
 
